@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    Hello world
+    <h1>Flask Weather App</h1>
+    <form action="{{ url_for('weather') }}" method="POST">
+        <label for="city">Enter a city name:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    <h5>temp: {{temp}}</h5>
 </body>
 </html>
