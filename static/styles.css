@@ -1,0 +1,108 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0062cc;
+}
+
+.weather-info {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.weather-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .weather-details {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .detail {
+      width: 50%;
+    }
+  }
+  
+  .value {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url('https://openweathermap.org/img/w/{{icon}}.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .detail span {
+    margin-left: auto;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
