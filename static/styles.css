@@ -4,6 +4,10 @@
     padding: 20px;
 }
 
+body {
+  background-color: rgb(155, 155, 155);
+}
+
 .heading {
     text-align: center;
     font-size: 32px;
